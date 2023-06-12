@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image'
-import {BsMoonStarsFill} from 'react-icons/bs'
-import {AiFillLinkedin, AiFillGithub, AiFillTwitterCircle, AiFillHtml5} from 'react-icons/ai'
+import {AiFillLinkedin, AiFillGithub, AiFillHtml5} from 'react-icons/ai'
 import {IoLogoJavascript} from 'react-icons/io'
 import avatar from '/Users/learnacademy/Desktop/jose-portfolio/public/img-1.jpeg'
 import design from 'public/design.png'
@@ -30,7 +29,7 @@ export default function Home() {
   return (
     <main className='bg-gradient-to-t from-cyan-500 to-slate-800  text-white'>
       <NavBar className='bg-slate-800' />
-      <section className='min-h-screen' >
+      <section className='min-h-auto' >
        <div className='text-center p-10 '>
         <h2 className='text-5xl py-1 text-teal-500 font-medium'>Jose Salas</h2>
         <div className='relative mx-auto '>
@@ -41,14 +40,11 @@ export default function Home() {
         <samp>Software Developer | 💻 Tech & 🌳 Nature Enthusiast</samp>
         </p>
        </div>
-
       </section>
-   
       <section id='workId'className='flex flex-wrap justify-center'>
         <div className='bg-white text-center shadow-lg p-10 rounded-xl m-10 flex-1'>
           <Image src='/code.png' width={100} height={100} className='mx-auto' />
           <h3 className='text-lg font-medium pt-8 pb-2 text-gray-800'>I work with the following:</h3>
-          
           <br/>
           <div className='m-8 flex flex-wrap justify-center'>
             <IoLogoJavascript className='  bg-yellow-300 ' size='3rem'/>
@@ -98,10 +94,9 @@ export default function Home() {
       </section>
       <div id='contactId' className='bg-black shadow-lg  m-10 p-10 rounded-xl flex-1' >
           <div className='text-5xl flex justify-center gap-10 py-2'>
-            <a href="#"><AiFillGithub className='text-white'/></a>
+            <a href="https://github.com/salas89jl"><AiFillGithub className='text-white'/></a>
             <a href="https://www.linkedin.com/in/joselsalas/"><AiFillLinkedin className='text-white'/></a>
-            <a href="#"><AiFillTwitterCircle className='text-white'/></a>
-            <a href='salas.89jl@gmail.com'>
+            <a href='mailto:salas.89jl@gmail.com'>
               <BsFillEnvelopeAtFill size='2.5rem' />
             </a>          
           </div>
