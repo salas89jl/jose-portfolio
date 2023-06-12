@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image'
 import {BsMoonStarsFill} from 'react-icons/bs'
 import {AiFillLinkedin, AiFillGithub, AiFillTwitterCircle, AiFillHtml5} from 'react-icons/ai'
@@ -8,9 +9,24 @@ import {BsFillEnvelopeAtFill} from 'react-icons/bs'
 import {DiRuby} from 'react-icons/di'
 import NavBar from './comps/Navbar'
 import Projects from './comps/Projects'
+import { useEffect, useState } from 'react'
 
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset
+      setShowButton(scrollTop)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  },[])
   return (
     <main className='bg-gradient-to-t from-cyan-500 to-slate-800  text-white'>
       <NavBar className='bg-slate-800' />
@@ -25,22 +41,14 @@ export default function Home() {
         <samp>Software Developer | 💻 Tech & 🌳 Nature Enthusiast</samp>
         </p>
        </div>
-        <div className='bg-black shadow-lg m-10 p-10 rounded-xl flex-1'>
-          <div className='text-5xl flex justify-center gap-16 py-2'>
-            <a href="#"><AiFillGithub className='text-white'/></a>
-            <a href="https://www.linkedin.com/in/joselsalas/"><AiFillLinkedin className='text-white'/></a>
-            <a href="#"><AiFillTwitterCircle className='text-white'/></a>
-            <a href='salas.89jl@gmail.com'>
-              <BsFillEnvelopeAtFill size='2.5rem' />
-            </a>          
-          </div>
-        </div>
+
       </section>
    
-      <section>
-        <div className='bg-white p-8  mx-10 rounded-xl text-black'>
-          <h3 className='text-lg text-center font-semibold pt-8 pb-2 text-gray-800'>I work with the following:</h3>
-          <h4 className='text-md font-medium text-center text-gray-800'> Languages </h4>
+      <section id='workId'className='flex flex-wrap justify-center'>
+        <div className='bg-white text-center shadow-lg p-10 rounded-xl m-10 flex-1'>
+          <Image src='/code.png' width={100} height={100} className='mx-auto' />
+          <h3 className='text-lg font-medium pt-8 pb-2 text-gray-800'>I work with the following:</h3>
+          
           <br/>
           <div className='m-8 flex flex-wrap justify-center'>
             <IoLogoJavascript className='  bg-yellow-300 ' size='3rem'/>
@@ -53,15 +61,10 @@ export default function Home() {
               &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /> 
           </div>
-          <br/>
-          <p className='text-md font-medium text-center text-gray-800'> Frameworks </p>
-          <br/>
           <div className='m-8 flex flex-wrap justify-center'>
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
             &nbsp;&nbsp;&nbsp; 
-            
             <img className='h-12  fill-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
-          
             &nbsp;&nbsp;&nbsp; 
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" />
             &nbsp;&nbsp;&nbsp;  
@@ -82,26 +85,36 @@ export default function Home() {
           <p className='text-gray-800 py-1'>Figma</p>
         </div>
       </section>
-      <section>
+      <section id='projectsId'>
         <div className='bg-white p-5 m-10 rounded-xl text-black'>
-          <h3 className='text-3xl py-1'>Portfolio</h3>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
+          <h3 className='text-3xl py-1'>Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              I offer from a wide range of services, including design and programming.
             </p>
-        </div>
-        <div>
-          <Projects  />
+            <div>
+              <Projects  />
+            </div>
         </div>
       </section>
+      <div id='contactId' className='bg-black shadow-lg  m-10 p-10 rounded-xl flex-1' >
+          <div className='text-5xl flex justify-center gap-10 py-2'>
+            <a href="#"><AiFillGithub className='text-white'/></a>
+            <a href="https://www.linkedin.com/in/joselsalas/"><AiFillLinkedin className='text-white'/></a>
+            <a href="#"><AiFillTwitterCircle className='text-white'/></a>
+            <a href='salas.89jl@gmail.com'>
+              <BsFillEnvelopeAtFill size='2.5rem' />
+            </a>          
+          </div>
+        </div>
+      {showButton && (
+        <button
+          className="fixed bottom-4 right-4 p-2 bg-gray-900 text-white rounded-md"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          Back to Top
+        </button>
+      )}
+      
       <footer className='bg-cyan-600 bottom-0 p-10 text-center'>
       <h3>
         This is my footer | Copyrights are all in this bitch

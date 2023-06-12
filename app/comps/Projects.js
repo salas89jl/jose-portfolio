@@ -12,9 +12,6 @@ export default function Projects() {
   
   return (
     <>
-      <div>
-        <h1>Projects</h1>
-      </div>
       <div className='m-8 flex flex-wrap justify-center'>
         {sortedProjects.map((project) => (
           <div key={project.id}>
