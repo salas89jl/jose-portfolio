@@ -19,10 +19,16 @@ export default function Projects() {
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {project.title}
               </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
-                {project.description}
-              </p>
+              <div className=" h-44 w-56 overflow-hidden hover:overflow-auto">
+                <div>
+                    <p className="font-normal text-gray-700  dark:text-gray-400">
+                        {project.description}
+                    </p>
+                </div>
+                </div>
+               <h3> 
               <a href={project.github}><AiFillGithub className='text-black'/></a>
+              </h3>
             </Card>
           </div>
         ))}
