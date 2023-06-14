@@ -31,16 +31,16 @@ export default function NavBar() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="#">
+        <Navbar.Link className='text-lg' href="aboutId" onClick={(e) => handleScrollToSection(e, 'aboutId')}   >
           About
         </Navbar.Link>
-        <Navbar.Link href="workId" onClick={(e) => handleScrollToSection(e, 'workId')}>
+        <Navbar.Link className='text-lg' href="workId" onClick={(e) => handleScrollToSection(e, 'workId')}>
           Services
         </Navbar.Link>
-        <Navbar.Link href="contactId" onClick={(e) => handleScrollToSection(e, 'contactId')}>
+        <Navbar.Link className='text-lg' href="contactId" onClick={(e) => handleScrollToSection(e, 'contactId')}>
           Contact
         </Navbar.Link>
-        <Navbar.Link href="projectsId" onClick={(e) => handleScrollToSection(e, 'projectsId')}>
+        <Navbar.Link className='text-lg' href="projectsId" onClick={(e) => handleScrollToSection(e, 'projectsId')}>
           Projects
         </Navbar.Link>
       </Navbar.Collapse>

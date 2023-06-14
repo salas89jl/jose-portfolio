@@ -9,6 +9,8 @@ import {DiRuby} from 'react-icons/di'
 import NavBar from './comps/Navbar'
 import Projects from './comps/Projects'
 import { useEffect, useState } from 'react'
+import AniText from './comps/AniText';
+
 
 
 export default function Home() {
@@ -27,37 +29,48 @@ export default function Home() {
     }
   },[])
   return (
+    
     <main className='bg-gradient-to-t from-cyan-500 to-slate-800  text-white'>
       <NavBar className='bg-slate-800' />
-      <section className='min-h-auto' >
-       <div className='text-center p-10 '>
-        <h2 className='text-5xl py-1 text-teal-500 font-medium'>Jose Salas</h2>
+      <section className='min-h-auto flex flex-wrap justify-evenly motion-safe' >
+      <div className='text-center shadow-lg p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe:'>
+       <h1 class="  text-5xl py-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold">Jose Salas</h1>
+        <h2 className='text-5xl py-1 text-teal-500 font-medium'></h2>
+
+       
         <div className='relative mx-auto '>
-        <Image src={avatar} className='mx-auto shadow-lg opacity-90 rounded-md w-80 h-70 mt-20 ' />
+        <Image src={avatar} className='mx-auto shadow-lg opacity-90 rounded-md w-80 h-70 mt-10 ' />
        </div>
-        <h3 className='text-2xl py-2 '>Developer and Artist</h3>
-        <p className='text-md pt-2 leading-8'>
-        <samp>Software Developer | 💻 Tech & 🌳 Nature Enthusiast</samp>
-        </p>
+
+
+        <div className='flex flex-wrap justify-center pt-10'>
+       
+          <div class="word" className='p-10 text-center '><AniText /></div>
+          </div>
+        
        </div>
+        <div id='aboutId' className=' text-center p-10 rounded-xl mt-40 flex-1 '>
+          <h3 className='   text-3xl h-14 p-3 bg-gradient-to-l from-cyan-500 to-blue-500 text-white font-medium flex justify-center rounded-2xl '>About Me</h3>
+          <p className='p-5 bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 tracking-wide text-white rounded-lg shadow-xl justfiy-center m-5'>
+          I am excited to announce that I am embarking on a new journey as a full stack developer after retiring as a Boatswains Mate Chief Petty Officer. I am eager to utilize my skills in problem-solving, attention to detail, and teamwork in this dynamic field. With a passion for technology and a desire to continuously learn, I am confident that I can make a meaningful impact as a full stack developer. I look forward to connecting with like-minded individuals and companies who share the same passion for innovation and growth.
+          </p>
+        </div>
       </section>
       <section id='workId'className='flex flex-wrap justify-center'>
-        <div className='bg-white text-center shadow-lg p-10 rounded-xl m-10 flex-1'>
+        <div className='bg-gradient-to-bl   from-teal-400 via-cyan-500 to-cyan-600 text-center shadow-xl p-10 rounded-xl m-10 flex-1'>
           <Image src='/code.png' width={100} height={100} className='mx-auto' />
-          <h3 className='text-lg font-medium pt-8 pb-2 text-gray-800'>I work with the following:</h3>
-          <br/>
-          <div className='m-8 flex flex-wrap justify-center'>
+          
+
+          <div className=' p-10 m-auto rounded-lg flex flex-wrap justify-center'>
             <IoLogoJavascript className='  bg-yellow-300 ' size='3rem'/>
             &nbsp;&nbsp;&nbsp; 
-            <DiRuby size='3rem' className='text-red-700 ' />  
+            <DiRuby size='3rem' className='text-teal-400 ' />  
             &nbsp;&nbsp;&nbsp; 
             <AiFillHtml5 size='3rem' className='text-orange-600 '/>
             &nbsp;&nbsp;&nbsp; 
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
               &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /> 
-          </div>
-          <div className='m-8 flex flex-wrap justify-center'>
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
             &nbsp;&nbsp;&nbsp; 
             <img className='h-12  fill-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
@@ -69,22 +82,23 @@ export default function Home() {
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
             &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />  
+          
           </div>
         </div>
-        <div className=' bg-white text-center shadow-lg p-10 rounded-xl m-10 flex-1'>
+        <div className=' bg-gradient-to-br f from-teal-400 via-cyan-500 to-cyan-600 text-center shadow-xl p-10 rounded-xl  m-10 flex-1'>
           <Image src={design} width={100} height={100} className='mx-auto' />
-          <h3 className='text-lg font-medium pt-8 pb-2 text-gray-800'>Beautiful Designs</h3>
-          <p className='py-2 text-gray-900'>
-             Creating elegant designs suited for your needs following core design theory.
+          <h3 className='text-lg font-medium pt-8 pb-2 text-white'>Beautiful Designs</h3>
+          <p className='py-2 text-white'>
+             Creating elegant designs suited for your needs following core design theory soft.
           </p>
           <h4 className='py-4 text-teal-600'>Design tools I use</h4>
           <p className='text-gray-800 py-1'>Figma</p>
         </div>
       </section>
       <section id='projectsId'>
-        <div className='bg-white p-5 m-10 rounded-xl text-black'>
-          <h3 className='text-3xl py-1'>Projects</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+        <div className='bg-gradient-to-b from-teal-400 via-cyan-500 to-cyan-600 p-5 m-10 rounded-xl shadow-xl text-center'>
+          <h3 className='text-lg font-medium pt-8 pb-2 text-white py-1'>Projects</h3>
+            <p className="text-md py-2 leading-8 text-white dark:text-gray-200">
               I offer from a wide range of services, including design and programming.
             </p>
             <div>
