@@ -4,7 +4,7 @@ import { projects } from 'app/projects.js';
 import { AiFillGithub } from 'react-icons/ai'
 export default function Projects() {
   const sortProjects = (p) => {
-    p.sort((a, b) => b.title.localeCompare(a.title));
+    p.sort((a, b) => a.title.localeCompare(b.title));
     return p;
   };
 
@@ -12,7 +12,7 @@ export default function Projects() {
   
   return (
     <>
-      <div className='m-8 flex flex-wrap justify-center'>
+      <div className='mx-8 mt-2 flex flex-wrap justify-center'>
         {sortedProjects.map((project) => (
           <div key={project.id}>
             <Card className='w-30 mx-10' horizontal imgSrc={project.image}>
@@ -26,8 +26,8 @@ export default function Projects() {
                     </p>
                 </div>
                 </div>
-               <h3> 
-              <a href={project.github}><AiFillGithub className='text-black'/></a>
+               <h3 className='text-3xl'> 
+              <a href={project.github}><AiFillGithub className='text-black' /></a>
               </h3>
             </Card>
           </div>
