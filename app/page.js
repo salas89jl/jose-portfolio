@@ -1,19 +1,17 @@
-'use client';
+'use client'
 import Image from 'next/image'
-import {AiFillLinkedin, AiFillGithub, AiFillHtml5} from 'react-icons/ai'
-import {IoLogoJavascript} from 'react-icons/io'
-import avatar from '/Users/learnacademy/Desktop/jose-portfolio/public/img-1.jpeg'
+import { AiFillLinkedin, AiFillGithub, AiFillHtml5 } from 'react-icons/ai'
+import { IoLogoJavascript } from 'react-icons/io'
+import avatar from '../public/img-1.jpeg'
 import design from 'public/design.png'
-import {BsFillEnvelopeAtFill} from 'react-icons/bs'
-import {DiRuby} from 'react-icons/di'
+import { BsFillEnvelopeAtFill } from 'react-icons/bs'
+import { DiRuby } from 'react-icons/di'
 import NavBar from './comps/Navbar'
 import Projects from './comps/Projects'
-import { useEffect, useState } from 'react'
-import AniText from './comps/AniText';
+import React, { useEffect, useState } from 'react'
+import AniText from './comps/AniText'
 
-
-
-export default function Home() {
+export default function Home () {
   const [showButton, setShowButton] = useState(false)
 
   useEffect(() => {
@@ -27,27 +25,23 @@ export default function Home() {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  },[])
+  }, [])
   return (
-    
+
     <main className='bg-gradient-to-t from-cyan-500 to-slate-800  text-white'>
       <NavBar className='bg-slate-800' />
       <section className='min-h-auto flex flex-wrap justify-evenly motion-safe' >
       <div className='text-center shadow-lg p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe:'>
-       <h1 class="  text-5xl py-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold">Jose Salas</h1>
+       <h1 className="  text-5xl py-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold">Jose Salas</h1>
         <h2 className='text-5xl py-1 text-teal-500 font-medium'></h2>
-
-       
         <div className='relative mx-auto '>
         <Image src={avatar} className='mx-auto shadow-lg opacity-90 rounded-md w-80 h-70 mt-10 ' />
-       </div>
-
-
+      </div>
         <div className='flex flex-wrap justify-center pt-10'>
-       
-          <div class="word" className='p-10 text-center '><AniText /></div>
+
+          <div className="word p-10 text-center"><AniText /></div>
           </div>
-        
+
        </div>
         <div id='aboutId' className=' text-center p-10 rounded-xl mt-40 flex-1 '>
           <h3 className='   text-3xl h-14 p-3 bg-gradient-to-l from-cyan-500 to-blue-500 text-white font-medium flex justify-center rounded-2xl '>About Me</h3>
@@ -59,30 +53,28 @@ export default function Home() {
       <section id='workId'className='flex flex-wrap justify-center'>
         <div className='bg-gradient-to-bl   from-teal-400 via-cyan-500 to-cyan-600 text-center shadow-xl p-10 rounded-xl m-10 flex-1'>
           <Image src='/code.png' width={100} height={100} className='mx-auto' />
-          
-
           <div className=' p-10 m-auto rounded-lg flex flex-wrap justify-center'>
             <IoLogoJavascript className='  bg-yellow-300 ' size='3rem'/>
-            &nbsp;&nbsp;&nbsp; 
-            <DiRuby size='3rem' className='text-teal-400 ' />  
-            &nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;
+            <DiRuby size='3rem' className='text-teal-400 ' />
+            &nbsp;&nbsp;&nbsp;
             <AiFillHtml5 size='3rem' className='text-orange-600 '/>
-            &nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
               &nbsp;&nbsp;&nbsp;
-            <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /> 
+            <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-            &nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;
             <img className='h-12  fill-white' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
-            &nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" />
-            &nbsp;&nbsp;&nbsp;  
+            &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
             &nbsp;&nbsp;&nbsp;
             <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
             &nbsp;&nbsp;&nbsp;
-            <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />  
-          
+            <img className='h-12 ' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+
           </div>
         </div>
         <div className=' bg-gradient-to-br f from-teal-400 via-cyan-500 to-cyan-600 text-center shadow-xl p-10 rounded-xl  m-10 flex-1'>
@@ -102,7 +94,7 @@ export default function Home() {
               I offer from a wide range of services, including design and programming.
             </p>
             <div>
-              <Projects  />
+              <Projects />
             </div>
         </div>
       </section>
@@ -112,7 +104,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/joselsalas/"><AiFillLinkedin className='text-white'/></a>
             <a href='mailto:salas.89jl@gmail.com'>
               <BsFillEnvelopeAtFill size='2.5rem' />
-            </a>          
+            </a>
           </div>
         </div>
       {showButton && (
@@ -123,13 +115,13 @@ export default function Home() {
           Back to Top
         </button>
       )}
-      
+
       <footer className='bg-cyan-600 bottom-0 p-10 text-center'>
       <h3>
         This is my footer | Copyrights are all in this bitch
       </h3>
       </footer>
     </main>
-  
+
   )
 }

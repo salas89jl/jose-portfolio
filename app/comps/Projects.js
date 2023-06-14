@@ -1,15 +1,16 @@
-'use client';
-import { Card } from 'flowbite-react';
-import { projects } from 'app/projects.js';
+'use client'
+import { Card } from 'flowbite-react'
+import { projects } from 'app/projects.js'
 import { AiFillGithub } from 'react-icons/ai'
-export default function Projects() {
+import React from 'react'
+export default function Projects () {
   const sortProjects = (p) => {
-    p.sort((a, b) => a.title.localeCompare(b.title));
-    return p;
-  };
+    p.sort((a, b) => a.title.localeCompare(b.title))
+    return p
+  }
 
-  const sortedProjects = sortProjects(projects);
-  
+  const sortedProjects = sortProjects(projects)
+
   return (
     <>
       <div className='mx-8 mt-2 flex flex-wrap justify-center'>
@@ -26,7 +27,7 @@ export default function Projects() {
                     </p>
                 </div>
                 </div>
-               <h3 className='text-3xl'> 
+               <h3 className='text-3xl'>
               <a href={project.github}><AiFillGithub className='text-black' /></a>
               </h3>
             </Card>
@@ -34,5 +35,5 @@ export default function Projects() {
         ))}
       </div>
     </>
-  );
+  )
 }
