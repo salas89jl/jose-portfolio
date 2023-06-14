@@ -8,7 +8,7 @@ export default function AniText() {
     const words = [
         'Hi!',
         'Thanks for visiting! ',
-        'I am a', 
+        'I am a...', 
         'Software Developer',
         '💻 Tech Enthusiast', 
         '🌳 Nature Enthusiast',

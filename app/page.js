@@ -89,7 +89,7 @@ export default function Home() {
           <Image src={design} width={100} height={100} className='mx-auto' />
           <h3 className='text-lg font-medium pt-8 pb-2 text-white'>Beautiful Designs</h3>
           <p className='py-2 text-white'>
-             Creating elegant designs suited for your needs following core design theory.
+             Creating elegant designs suited for your needs following core design theory soft.
           </p>
           <h4 className='py-4 text-teal-600'>Design tools I use</h4>
           <p className='text-gray-800 py-1'>Figma</p>
