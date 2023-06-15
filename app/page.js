@@ -31,26 +31,26 @@ export default function Home () {
     <main className='bg-gradient-to-t from-cyan-500 to-slate-800  text-white'>
       <NavBar className='bg-slate-800' />
       <section className='min-h-auto flex flex-wrap justify-evenly motion-safe' >
-      <div className='text-center shadow-lg p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe:'>
+      <div className='text-center p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe:'>
        <h1 className="  text-5xl py-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold">Jose Salas</h1>
         <h2 className='text-5xl py-1 text-teal-500 font-medium'></h2>
         <div className='relative mx-auto '>
-        <Image src={avatar} className='mx-auto shadow-lg opacity-90 rounded-md w-80 h-70 mt-10 ' />
-      </div>
+          <Image src={avatar} className='mx-auto shadow-lg opacity-90 rounded-md w-80 h-70 mt-10 ' />
+        </div>
         <div className='flex flex-wrap justify-center pt-10'>
 
           <div className="word p-10 text-center"><AniText /></div>
-          </div>
+        </div>
 
-       </div>
-        <div id='aboutId' className=' text-center p-10 rounded-xl mt-40 flex-1 '>
-          <h3 className='   text-3xl h-14 p-3 bg-gradient-to-l from-cyan-500 to-blue-500 text-white font-medium flex justify-center rounded-2xl '>About Me</h3>
-          <p className='p-5 bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 tracking-wide text-white rounded-lg shadow-xl justfiy-center m-5'>
+      </div>
+        <div id='aboutId' className=' slide-in-right text-center p-10 rounded-xl mt-40 flex-1 '>
+          <h3 className='   text-3xl h-14 p-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium flex justify-center rounded-2xl '>About Me</h3>
+          <p className='text-xl p-5 bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 tracking-wide text-white rounded-lg shadow-xl justfiy-center m-5'>
           I am excited to announce that I am embarking on a new journey as a full stack developer after retiring as a Boatswains Mate Chief Petty Officer. I am eager to utilize my skills in problem-solving, attention to detail, and teamwork in this dynamic field. With a passion for technology and a desire to continuously learn, I am confident that I can make a meaningful impact as a full stack developer. I look forward to connecting with like-minded individuals and companies who share the same passion for innovation and growth.
           </p>
         </div>
       </section>
-      <section id='workId'className='flex flex-wrap justify-center'>
+      <section id='workId'className=' min-h-auto flex flex-wrap justify-center md:flex-row'>
         <div className='bg-gradient-to-bl   from-teal-400 via-cyan-500 to-cyan-600 text-center shadow-xl p-10 rounded-xl m-10 flex-1'>
           <Image src='/code.png' width={100} height={100} className='mx-auto' />
           <div className=' p-10 m-auto rounded-lg flex flex-wrap justify-center'>
@@ -118,7 +118,7 @@ export default function Home () {
 
       <footer className='bg-cyan-600 bottom-0 p-10 text-center'>
       <h3>
-        This is my footer | Copyrights are all in this bitch
+        Jose Salas | Copyrights
       </h3>
       </footer>
     </main>
