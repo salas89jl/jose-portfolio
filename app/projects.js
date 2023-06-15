@@ -21,7 +21,15 @@ const projects = [
     description: "ARA is an online platform dedicated solely to the world of anime. Our mission is simple: to provide you with a comprehensive database of anime content so that you can find what you like, not only what's currently popular. ",
     github: 'https://github.com/salas89jl/apartment-app-frontend-caserio-world-wide',
     image: '/ara.png'
+  },
+  {
+    id: 3,
+    title: 'Text-Base Murder Mystery',
+    description: 'This game takes place in the terminal. The interactions between the user and the game are text-based. The user will see a story printed to the terminal and then be presented with options that the will determine the next phase of the story. Users will type their selection into the terminal.',
+    github: 'https://github.com/salas89jl/text-based-game-murder-mystery',
+    image: '/text-base-game.png'
   }
+
 ]
 
 export { projects }
