@@ -21,5 +21,16 @@
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
+.slide-in-right {
+  position: relative;
+  animation: slide-in 2s forwards;
+  right: -100%;
+}
+
+@keyframes slide-in {
+  0% { right: -100%; }
+  100% { right: 0; }
+}
+
 
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function AniText () {
   const words = [
- 
+
     'Software Developer',
     ' 💻 Tech Enthusiast',
     ' 🌳 Nature Enthusiast',
