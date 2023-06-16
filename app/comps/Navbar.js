@@ -22,7 +22,7 @@ export default function NavBar () {
         />
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button href='https://acrobat.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3Af27f23b8-6112-43a2-8d10-55f7acc58f74'>
+        <Button href='https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f1e22db7-6e35-41ee-ba55-991a21e31100'>
           Resumé
         </Button>
         <Navbar.Toggle />
