@@ -13,9 +13,9 @@ export default function Projects () {
 
   return (
     <>
-      <div className="mx-8 mt-2 flex flex-wrap justify-center">
+      <div className="mx-6 mt-2 flex flex-wrap justify-center">
         {sortedProjects.map((project) => (
-          <div key={project.id} className="w-64 mb-8 mx-4">
+          <div key={project.id} className="w-72 mb-8 mx-auto">
             <Card className="h-full">
               <img src={project.image} alt={project.title} className="object-cover h-44 w-full" />
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -33,7 +33,7 @@ export default function Projects () {
               </h3>
             </Card>
           </div>
-      ))}
+        ))}
       </div>
     </>
   )
