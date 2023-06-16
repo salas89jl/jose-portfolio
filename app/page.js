@@ -23,7 +23,7 @@ export default function Home () {
            <div className='relative mx-auto '>
             <Image src={avatar} className='mx-auto shadow-2xl opacity-90 rounded-md w-80 h-70 mt-10 ' />
             </div>
-            <div className='flex flex-wrap justify-center pt-10'>
+            <div className='flex flex-wrap justify-center pb-10 '>
               <div className="absolute word p-10 text-center"><AniText /></div>
             </div>
         </div>
