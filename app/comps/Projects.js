@@ -33,7 +33,7 @@ export default function Projects () {
               </h3>
             </Card>
           </div>
-      ))}
+        ))}
       </div>
     </>
   )
