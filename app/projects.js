@@ -23,9 +23,9 @@ const projects = [
     image: '/ara.png'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Text-Base Murder Mystery',
-    description: 'This game takes place in the terminal. The interactions between the user and the game are text-based. The user will see a story printed on the terminal and then be presented with options that will determine the story\'s next phase. Users will type their selection into the terminal.',
+    description: 'A terminal-based game takes place in the terminal. Interactions between the user and the game are text-based. The user will see a story printed on the terminal and then be presented with options that will determine the story\'s next phase. Users will type their selection into the terminal.',
     github: 'https://github.com/salas89jl/text-based-game-murder-mystery',
     image: '/text-base-game.png'
   }
