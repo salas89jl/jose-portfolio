@@ -10,6 +10,7 @@ import Projects from './comps/Projects'
 import NavBar from './comps/Navbar'
 import React from 'react'
 import GoBackButton from './comps/Button/GoBackButton'
+import YoutubeVideo from './comps/Video'
 
 export default function Home () {
   return (
@@ -36,22 +37,26 @@ export default function Home () {
       </section>
       <section id='workId' className=' min-h-auto flex flex-wrap justify-center '>
         <div className='bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 text-center p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe:'>
-          <Image src='/code.png' width={100} height={100} className='mx-auto' />
-          <div className=' mt-6 p-10 m-auto rounded-lg flex flex-wrap justify-center bg-white shadow-xl'>
+          <Image src='/code2.png' width={100} height={100} className='mx-auto shadow-2xl rounded-full' />
+          <h3 className="text-lg font-medium pt-8 pb-2 text-white">Code</h3>
+          <div className=' mt-6 p-10 m-auto rounded-lg flex flex-wrap justify-center bg-gradient-to-bl from-cyan-400 to-cyan-600 shadow-xl'>
 
            <Icons />
 
           </div>
         </div>
-        <div className=' bg-gradient-to-br f from-teal-400 via-cyan-500 to-cyan-600 text-center p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe:'>
-          <Image src={design} width={100} height={100} className='mx-auto' />
-          <h3 className='text-lg font-medium pt-8 pb-2 text-white'>Beautiful Designs</h3>
-          <p className='py-2 text-white'>
-             Creating elegant designs suited for your needs following core design theory soft.
-          </p>
-          <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-          <p className='text-gray-800 py-1'>Figma</p>
+        <div className="bg-gradient-to-br from-teal-400 via-cyan-500 to-cyan-600 text-center p-10 rounded-xl mt-10 mx-10 flex-1 motion-safe">
+          <Image src={design} width={100} height={100} className="mx-auto" />
+          <h3 className="text-lg font-medium pt-8 pb-2 text-white">Tech Talks</h3>
+          <div className="mt-6 p-4 rounded-lg flex flex-wrap justify-center bg-gradient-to-bl from-cyan-400 to-cyan-600 shadow-xl">
+            <div className="w-full aspect-w-16 aspect-h-0 ">
+              <YoutubeVideo />
+
+            </div>
+
+          </div>
         </div>
+
       </section>
       <section id='projectsId'>
         <div className='bg-gradient-to-tl from-teal-400 via-cyan-500 to-cyan-600 p-5 m-10 rounded-xl shadow-xl text-center'>
@@ -74,6 +79,7 @@ export default function Home () {
           </div>
         </div>
       <GoBackButton />
+
       <footer className='bg-cyan-600 bottom-0 p-10 text-center'>
         <h3>
           Jose Salas | Copyrights

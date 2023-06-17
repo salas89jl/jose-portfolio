@@ -5,7 +5,7 @@ export default function Icons () {
         <>
             {icons.map((icon) => (
                 <div key={icon.id}>
-                    <img src={icon.src} className='h-12 ' />
+                    <img src={icon.src} className='h-16 p-2' />
                 </div>
             ))}
         </>
