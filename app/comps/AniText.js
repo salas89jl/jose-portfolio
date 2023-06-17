@@ -5,9 +5,9 @@ export default function AniText () {
   const words = [
 
     'Software Developer',
-    ' 💻 Tech Enthusiast',
-    ' 🌳 Nature Enthusiast',
-    ' ⚓️ U.S.N Veteran'
+    ' Tech Enthusiast',
+    ' Nature Enthusiast',
+    '  U.S.N Veteran'
 
   ]
   const [text, setText] = useState('')
