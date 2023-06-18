@@ -13,11 +13,12 @@ export default function NavBar () {
     <Navbar
       fluid
       rounded
+
     >
       <Navbar.Brand href="">
         <img
-          alt="Flowbite React Logo"
-          className="mr-3 h-14"
+          alt="Jose Saslas Logo"
+          className="mr-3 h-20"
           src='/pflogo.png'
         />
       </Navbar.Brand>
@@ -34,11 +35,17 @@ export default function NavBar () {
         <Navbar.Link className='text-lg' href="workId" onClick={(e) => handleScrollToSection(e, 'workId')}>
           Services
         </Navbar.Link>
-        <Navbar.Link className='text-lg' href="contactId" onClick={(e) => handleScrollToSection(e, 'contactId')}>
-          Contact
+        <Navbar.Link className='text-lg' href="techTalk" onClick={(e) => handleScrollToSection(e, 'techTalk')}>
+          Tech Talks
+        </Navbar.Link>
+        <Navbar.Link className='text-lg' href="treasureHunt" onClick={(e) => handleScrollToSection(e, 'treasureHunt')}>
+          Treasure Hunt
         </Navbar.Link>
         <Navbar.Link className='text-lg' href="projectsId" onClick={(e) => handleScrollToSection(e, 'projectsId')}>
           Projects
+        </Navbar.Link>
+        <Navbar.Link className='text-lg' href="contactId" onClick={(e) => handleScrollToSection(e, 'contactId')}>
+          Contact
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
