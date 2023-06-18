@@ -23,8 +23,8 @@ const TreasureHunt = () => {
 
   return (
     <>
-    <div className='text-center bg-gradient-to-tl from-slate-700 via-slate-800 to-slate-700 m-10 rounded-xl border-4 border-cyan-500 text-white font-mono shadow-xl shadow-sky-900'>
-      <h1 className='text-xl bg-yellow-300 mx-20 my-10 rounded-lg p-3 text-yellow-800 font-mono shadow-lg shadow-black'>Treasure Hunt Game</h1>
+    <div className='text-center bg-gradient-to-tl from-slate-700 via-slate-800 to-slate-700 m-1 xs:m-1 rounded-xl border-4 border-cyan-500 text-white font-mono shadow-xl shadow-sky-900'>
+      <h1 className='text-xl bg-yellow-300 mx-2 my-10 rounded-lg p-3 text-yellow-800 font-mono shadow-lg shadow-black'>Treasure Hunt Game</h1>
       <h2 className='py-2 text-lg font-semibold'>Instructions</h2>
       <div className="p-1 ">
         <ul>
@@ -33,7 +33,7 @@ const TreasureHunt = () => {
           <li>If you click on the treasure, you win</li>
         </ul>
       </div>
-      <div id="island" className='flex justify-center p-10 '>
+      <div id="island" className='min-h-min flex justify-center p-10 '>
         <table className='text-6xl border-4 border-cyan-950 p-5 bg-cyan-700 shadow-xl shadow-black rounded-xl'>
           <tbody >
             <tr className='border-none'>
