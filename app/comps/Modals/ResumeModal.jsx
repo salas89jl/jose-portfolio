@@ -1,10 +1,10 @@
-import React from 'react'
-import { Button, Modal } from 'flowbite-react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Button, Modal } from 'flowbite-react';
 
-export default function ResumeModal ({ openModal1, setOpenModal1 }) {
+export default function ResumeModal({ openModal1, setOpenModal1 }) {
   return (
     <>
-    
       <Modal dismissible show={openModal1} onClose={() => setOpenModal1(false)}>
         <Modal.Header>Hey There</Modal.Header>
         <Modal.Body>
@@ -24,5 +24,10 @@ export default function ResumeModal ({ openModal1, setOpenModal1 }) {
         </Modal.Footer>
       </Modal>
     </>
-  )
+  );
 }
+
+ResumeModal.propTypes = {
+  openModal1: PropTypes.bool.isRequired,
+  setOpenModal1: PropTypes.func.isRequired,
+};
