@@ -1,8 +1,10 @@
-'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Navbar } from 'flowbite-react'
+import ResumeModal from './Modals/ResumeModal'
 
 export default function NavBar () {
+  const [openModal1, setOpenModal1] = useState(false)
+
   const handleScrollToSection = (e, sectionId) => {
     e.preventDefault()
     const section = document.getElementById(sectionId)
@@ -10,25 +12,17 @@ export default function NavBar () {
   }
 
   return (
-    <Navbar
-      fluid
-      rounded
-
-    >
-      <Navbar.Brand href="">
-        <img
-          alt="Jose Saslas Logo"
-          className="mr-3 h-20"
-          src='/pflogo.png'
-        />
-      </Navbar.Brand>
-      <div className="flex md:order-2">
-        <Button href='https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f1e22db7-6e35-41ee-ba55-991a21e31100'>
-          Resumé
-        </Button>
-        <Navbar.Toggle />
-      </div>
-      <Navbar.Collapse>
+    <>
+      <Navbar fluid rounded>
+        <Navbar.Brand href="">
+          <img alt="Flowbite React Logo" className="mr-3 h-16" src="/pflogo.png" />
+        </Navbar.Brand>
+        <div className="flex md:order-2">
+          <ResumeModal openModal1={openModal1} setOpenModal1={setOpenModal1} />
+          <Button className='bg-gradient-to-tr from-cyan-600 to-cyan-900' onClick={() => setOpenModal1(true)}>Resume</Button>
+          <Navbar.Toggle />
+        </div>
+        <Navbar.Collapse>
         <Navbar.Link className='text-lg' href="aboutId" onClick={(e) => handleScrollToSection(e, 'aboutId')} >
           About
         </Navbar.Link>
@@ -48,6 +42,7 @@ export default function NavBar () {
           Contact
         </Navbar.Link>
       </Navbar.Collapse>
-    </Navbar>
+      </Navbar>
+    </>
   )
 }
