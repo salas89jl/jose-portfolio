@@ -4,7 +4,7 @@ const icons = [
   {
     id: 1,
     title: 'CSS',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg'
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const icons = [
   {
     id: 4,
     title: 'JavaScript',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg'
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
   },
   {
     id: 5,
@@ -44,16 +44,29 @@ const icons = [
   {
     id: 9,
     title: 'Tailwind CSS',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg'
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'
   },
   {
     id: 10,
+    title: 'Bootsrap',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
   },
   {
     id: 12,
+    title: 'Nodejs',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
+  },
+  {
+    id: 13,
+    title: 'eslint',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg'
+  },
+  {
+    id: 14,
+    title: 'postgreSQL',
+    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
   }
+
 ]
 
 export { icons }

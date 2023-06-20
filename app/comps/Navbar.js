@@ -19,7 +19,7 @@ export default function NavBar () {
         </Navbar.Brand>
         <div className="flex md:order-2">
           <ResumeModal openModal1={openModal1} setOpenModal1={setOpenModal1} />
-          <Button className='bg-gradient-to-tr from-cyan-600 to-cyan-900' onClick={() => setOpenModal1(true)}>Resume</Button>
+          <Button className='bg-gradient-to-tr from-cyan-600 to-cyan-900' onClick={() => setOpenModal1(true)}>Resumé</Button>
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
