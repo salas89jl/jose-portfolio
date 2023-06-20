@@ -15,7 +15,7 @@ export default function ResumeModal ({ openModal1, setOpenModal1 }) {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:f1e22db7-6e35-41ee-ba55-991a21e31100">
+          <Button href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:61acc8dc-e08d-4ac8-ad5d-b43fa2781a98">
             I accept
           </Button>
           <Button color="gray" onClick={() => setOpenModal1(false)}>
