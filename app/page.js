@@ -23,7 +23,7 @@ export default function Home () {
            <h1 className="  text-6xl py-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold">Jose Salas</h1>
            <h2 className='text-5xl py-1 text-teal-500 font-medium'></h2>
            <div className='relative mx-auto '>
-            <Image src={avatar} className=' mx-auto shadow-xl shadow-slate-800  rounded-md w-80 h-70 mt-10 ' />
+            <Image src={avatar} className=' mx-auto shadow-xl shadow-slate-800 rounded-xl w-80 h-70 mt-10 ' />
             </div>
             <div className='flex flex-wrap justify-center pb-10 '>
               <div className="absolute word p-10 text-center"><AniText /></div>
@@ -43,7 +43,7 @@ export default function Home () {
         <div className='bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 text-center p-10 rounded-xl mt-10 mx-10 flex-1 shadow-xl shadow-sky-950  motion-safe:'>
           <Image src='/code2.png' width={100} height={100} className='mx-auto shadow-lg shadow-sky-800 rounded-full border-4 border-cyan-500' />
           <h3 className="text-xl font-medium pt-8 pb-2  text-white">Code</h3>
-          <div className=' mt-6 p-10 mx-10 rounded-lg flex flex-wrap justify-center bg-gradient-to-bl from-cyan-400 to-cyan-600 shadow-xl shadow-sky-900 '>
+          <div className=' mt-6 p-5 mx-10 rounded-lg flex flex-wrap justify-center bg-gradient-to-bl from-cyan-400 to-cyan-600 shadow-xl shadow-sky-900 '>
            <Icons />
           </div>
         </div>

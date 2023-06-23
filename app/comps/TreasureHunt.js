@@ -54,7 +54,12 @@ const TreasureHunt = () => {
           </tbody>
         </table>
       </div>
-      <p id="results" className='bg-stone-200 mx-4 my-10 px-3  rounded-lg text-xl text-slate-800 '></p>
+      <br />  
+      <div className='flex-1 m-1 '>
+        <div className='m-1'>
+          <p id="results" className='bg-stone-200 mx-4 my-10 px-3  rounded-lg text-xl text-slate-800 '></p>
+        </div>
+      </div>
       <button type="button"
         onClick={() => window.location.reload()}
         className='
