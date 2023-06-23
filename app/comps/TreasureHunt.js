@@ -23,8 +23,8 @@ const TreasureHunt = () => {
 
   return (
     <>
-    <div className='text-center bg-gradient-to-tl from-slate-700 via-slate-800 to-slate-700 m-1 xs:m-1 rounded-xl border-4 border-cyan-500 text-white font-mono shadow-xl shadow-sky-900'>
-      <h1 className='text-xl bg-yellow-300 mx-2 my-10 rounded-lg p-3 text-yellow-800 font-mono shadow-lg shadow-black'>Treasure Hunt Game</h1>
+    <div className='text-center bg-gradient-to-t from-slate-800 via-slate-700 to-slate-700 m-1 xs:m-1 rounded-xl border-4 border-cyan-500 text-white font-mono shadow-xl shadow-sky-900'>
+      <h1 className='text-3xl font-semibold bg-gradient-to-t from-yellow-300 via-yellow-300 to-yellow-300 mx-2 my-10 rounded-lg p-3 text-yellow-50 font-mono outline outline-2 outline-yellow-300 shadow-xl shadow-yellow-950'>Treasure Hunt Game</h1>
       <h2 className='py-2 text-lg font-semibold'>Instructions</h2>
       <div className="p-1 ">
         <ul>
@@ -34,7 +34,7 @@ const TreasureHunt = () => {
         </ul>
       </div>
       <div id="island" className='min-h-min flex justify-center p-10 '>
-        <table className='text-6xl border-4 border-cyan-950 p-5 bg-cyan-700 shadow-xl shadow-black rounded-xl'>
+        <table className='text-6xl border-4 border-cyan-950 p-5 bg-gradient-to-b from-cyan-400 via-cyan-300 to-cyan-300 shadow-xl shadow-zinc-900 rounded-xl'>
           <tbody >
             <tr className='border-none'>
               <td id="0" className='p-3 cursor-pointer' onClick={() => treasureHunt(0)}>🏝️</td>
@@ -54,8 +54,23 @@ const TreasureHunt = () => {
           </tbody>
         </table>
       </div>
-      <p id="results" className='bg-white mx-4 my-10 px-3  rounded-lg text-xl text-slate-800 '></p>
-      <button type="button" onClick={() => window.location.reload()} className='bg-slate-500 text-white p-3 rounded-lg m-3 shadow-lg shadow-black'>Restart Game</button>
+      <p id="results" className='bg-stone-200 mx-4 my-10 px-3  rounded-lg text-xl text-slate-800 '></p>
+      <button type="button"
+        onClick={() => window.location.reload()}
+        className='
+          bg-slate-500
+          text-white
+            p-3
+            rounded-lg
+            m-3
+            shadow-lg
+            shadow-black
+            outline outline-2
+            outline-gray-700
+          '
+      >
+        Restart Game
+      </button>
       <br />
       <br />
       </div>
