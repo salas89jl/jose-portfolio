@@ -43,26 +43,21 @@ const icons = [
   },
   {
     id: 9,
-    title: 'Tailwind CSS',
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'
-  },
-  {
-    id: 10,
     title: 'Bootsrap',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg'
   },
   {
-    id: 12,
+    id: 10,
     title: 'Nodejs',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
   },
   {
-    id: 13,
+    id: 11,
     title: 'eslint',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg'
   },
   {
-    id: 14,
+    id: 12,
     title: 'postgreSQL',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
   }

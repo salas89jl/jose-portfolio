@@ -1,5 +1,5 @@
 import React from 'react'
-import { icons } from 'app/icons.js'
+import {icons} from '@/app/icons'
 export default function Icons () {
   return (
         <>

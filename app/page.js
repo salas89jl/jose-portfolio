@@ -10,7 +10,7 @@ import NavBar from './comps/Navbar'
 import React from 'react'
 import GoBackButton from './comps/Button/GoBackButton'
 import YoutubeVideo from './comps/Video'
-import lecture4 from 'public/lecture4.png'
+import lecture4 from '@/public/lecture4.png'
 import TreasureHunt from './comps/TreasureHunt'
 
 export default function Home () {
@@ -23,7 +23,7 @@ export default function Home () {
            <h1 className="  text-6xl py-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-indigo-400 inline-block text-transparent bg-clip-text font-bold">Jose Salas</h1>
            <h2 className='text-5xl py-1 text-teal-500 font-medium'></h2>
            <div className='relative mx-auto '>
-            <Image src={avatar} className=' mx-auto shadow-xl shadow-slate-800 rounded-xl w-80 h-70 mt-10 ' />
+            <Image src={avatar} alt="Image of Jose Salas"className=' mx-auto shadow-xl shadow-slate-800 rounded-xl w-80 h-70 mt-10 ' />
             </div>
             <div className='flex flex-wrap justify-center pb-10 '>
               <div className="absolute word p-10 text-center"><AniText /></div>
@@ -41,7 +41,7 @@ export default function Home () {
       </section>
       <section id='workId' className=' min-h-auto flex flex-wrap justify-center '>
         <div className='bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 text-center p-10 rounded-xl mt-10 mx-10 flex-1 shadow-xl shadow-sky-950  motion-safe:'>
-          <Image src='/code2.png' width={100} height={100} className='mx-auto shadow-lg shadow-sky-800 rounded-full border-4 border-cyan-500' />
+          <Image src='/code2.png' alt='Code icon' width={100} height={100} className='mx-auto shadow-lg shadow-sky-800 rounded-full border-4 border-cyan-500' />
           <h3 className="text-xl font-medium pt-8 pb-2  text-white">Code</h3>
           <div className=' mt-6 p-5 mx-10 rounded-lg flex flex-wrap justify-center bg-gradient-to-bl from-cyan-400 to-cyan-600 shadow-xl shadow-sky-900 '>
            <Icons />
@@ -50,7 +50,7 @@ export default function Home () {
       </section>
       <section id='techTalk'>
       <div className="bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 text-center p-10 rounded-xl mt-20 mx-10 flex-1 shadow-xl shadow-sky-950 motion-safe">
-          <Image src={lecture4} width={100} height={100} className="mx-auto  rounded-full shadow-lg shadow-sky-800" />
+          <Image src={lecture4} alt='E-learning icon' width={100} height={100} className="mx-auto  rounded-full shadow-lg shadow-sky-800" />
           <h3 className="text-xl font-medium pt-8 pb-2 text-white">Tech Talks</h3>
           <div className="mt-6 p-4 rounded-lg flex flex-wrap justify-center bg-gradient-to-bl from-cyan-400 to-cyan-600 shadow-xl shadow-sky-900 ">
             <div className="w-full aspect-w-16 aspect-h-0 ">
@@ -72,7 +72,7 @@ export default function Home () {
         <div className='
         bg-gradient-to-bl from-teal-400 via-cyan-500 to-cyan-600 mx-10 mt-20 rounded-xl
         p-10 shadow-xl shadow-sky-950  text-center'>
-        <Image src={'/projects2.png'} width={100} height={100} className="mx-auto  rounded-full border-1 border-cyan-500 shadow-lg shadow-sky-800" />
+        <Image src={'/projects2.png'} alt='project icon' width={100} height={100} className="mx-auto  rounded-full border-1 border-cyan-500 shadow-lg shadow-sky-800" />
           <h3 className='text-xl font-medium pt-8  text-white py-2'>Projects</h3>
             <p className="text-md py-6 leading-8 text-white dark:text-gray-200">
             I offer a wide range of services, including design and programming!

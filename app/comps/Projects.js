@@ -1,6 +1,6 @@
 'use client'
 import { Card } from 'flowbite-react'
-import { projects } from 'app/projects.js'
+import { projects } from '@/app/projects.js'
 import { AiFillGithub } from 'react-icons/ai'
 import React from 'react'
 export default function Projects () {
